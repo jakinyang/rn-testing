@@ -11,7 +11,8 @@
     "lint": "eslint ."
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": ["./jest-setup-after-env.js"]
   },
   "dependencies": {
     "expo": "~47.0.12",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@react-native-community/eslint-config": "^3.2.0",
+    "@testing-library/jest-native": "^5.4.1",
     "@testing-library/react-native": "^11.5.1",
     "eslint": "^7.0",
     "prettier": "^2.8.3"
